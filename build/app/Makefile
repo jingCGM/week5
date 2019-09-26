@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jing/Desktop/808x/assignment/week5/week5
+CMAKE_SOURCE_DIR = /home/jing/Desktop/808x/assignment/week5/Git/week5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jing/Desktop/808x/assignment/week5/week5/build
+CMAKE_BINARY_DIR = /home/jing/Desktop/808x/assignment/week5/Git/week5/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jing/Desktop/808x/assignment/week5/week5/build/CMakeFiles /home/jing/Desktop/808x/assignment/week5/week5/build/app/CMakeFiles/progress.marks
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jing/Desktop/808x/assignment/week5/week5/build/CMakeFiles 0
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jing/Desktop/808x/assignment/week5/Git/week5/build/CMakeFiles /home/jing/Desktop/808x/assignment/week5/Git/week5/build/app/CMakeFiles/progress.marks
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jing/Desktop/808x/assignment/week5/Git/week5/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 app/CMakeFiles/shell-app.dir/rule:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/shell-app.dir/rule
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f CMakeFiles/Makefile2 app/CMakeFiles/shell-app.dir/rule
 .PHONY : app/CMakeFiles/shell-app.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ shell-app: app/CMakeFiles/shell-app.dir/rule
 
 # fast build rule for target.
 shell-app/fast:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/build
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/build
 .PHONY : shell-app/fast
 
 main.o: main.cpp.o
@@ -175,7 +175,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.o
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -184,7 +184,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.i
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -193,7 +193,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.s
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(MAKE) -f app/CMakeFiles/shell-app.dir/build.make app/CMakeFiles/shell-app.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -223,6 +223,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

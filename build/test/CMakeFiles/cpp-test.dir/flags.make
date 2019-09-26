@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -Wextra -Wpedantic -g   -std=gnu++14
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/jing/Desktop/808x/assignment/week5/week5/test/../vendor/googletest/googletest/include -I/home/jing/Desktop/808x/assignment/week5/week5/include -I/home/jing/Desktop/808x/assignment/week5/week5/vendor/googletest/googletest/include 
+CXX_INCLUDES = -I/home/jing/Desktop/808x/assignment/week5/Git/week5/test/../vendor/googletest/googletest/include -I/home/jing/Desktop/808x/assignment/week5/Git/week5/include -I/home/jing/Desktop/808x/assignment/week5/Git/week5/vendor/googletest/googletest/include 
 

@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../include/pidController.h
+
 ../test/../vendor/googletest/googletest/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
 ../test/../vendor/googletest/googletest/include/gtest/gtest/internal/gtest-death-test-internal.h
@@ -278,11 +280,17 @@ cxxabi.h
 acxx_demangle.h
 -
 
-/home/jing/Desktop/808x/assignment/week5/week5/test/main.cpp
+/home/jing/Desktop/808x/assignment/week5/Git/week5/test/main.cpp
 gtest/gtest.h
 -
 
-/home/jing/Desktop/808x/assignment/week5/week5/test/test.cpp
+/home/jing/Desktop/808x/assignment/week5/Git/week5/test/test.cpp
+iostream
+-
+vector
+-
 gtest/gtest.h
 -
+pidController.h
+/home/jing/Desktop/808x/assignment/week5/Git/week5/test/pidController.h
 

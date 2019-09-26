@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jing/Desktop/808x/assignment/week5/week5
+CMAKE_SOURCE_DIR = /home/jing/Desktop/808x/assignment/week5/Git/week5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jing/Desktop/808x/assignment/week5/week5/build
+CMAKE_BINARY_DIR = /home/jing/Desktop/808x/assignment/week5/Git/week5/build
 
 # Include any dependencies generated for this target.
 include vendor/googletest/googletest/CMakeFiles/gtest.dir/depend.make
@@ -59,16 +59,16 @@ include vendor/googletest/googletest/CMakeFiles/gtest.dir/flags.make
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: vendor/googletest/googletest/CMakeFiles/gtest.dir/flags.make
 vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: ../vendor/googletest/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jing/Desktop/808x/assignment/week5/week5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/jing/Desktop/808x/assignment/week5/week5/vendor/googletest/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jing/Desktop/808x/assignment/week5/Git/week5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && /usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/jing/Desktop/808x/assignment/week5/Git/week5/vendor/googletest/googletest/src/gtest-all.cc
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jing/Desktop/808x/assignment/week5/week5/vendor/googletest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jing/Desktop/808x/assignment/week5/Git/week5/vendor/googletest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jing/Desktop/808x/assignment/week5/week5/vendor/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jing/Desktop/808x/assignment/week5/Git/week5/vendor/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.requires:
 
@@ -91,9 +91,9 @@ gtest_EXTERNAL_OBJECTS =
 vendor/googletest/googletest/libgtest.a: vendor/googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 vendor/googletest/googletest/libgtest.a: vendor/googletest/googletest/CMakeFiles/gtest.dir/build.make
 vendor/googletest/googletest/libgtest.a: vendor/googletest/googletest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jing/Desktop/808x/assignment/week5/week5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest.a"
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jing/Desktop/808x/assignment/week5/Git/week5/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libgtest.a"
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean_target.cmake
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 vendor/googletest/googletest/CMakeFiles/gtest.dir/build: vendor/googletest/googletest/libgtest.a
@@ -105,10 +105,10 @@ vendor/googletest/googletest/CMakeFiles/gtest.dir/requires: vendor/googletest/go
 .PHONY : vendor/googletest/googletest/CMakeFiles/gtest.dir/requires
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/clean:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : vendor/googletest/googletest/CMakeFiles/gtest.dir/clean
 
 vendor/googletest/googletest/CMakeFiles/gtest.dir/depend:
-	cd /home/jing/Desktop/808x/assignment/week5/week5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jing/Desktop/808x/assignment/week5/week5 /home/jing/Desktop/808x/assignment/week5/week5/vendor/googletest/googletest /home/jing/Desktop/808x/assignment/week5/week5/build /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest /home/jing/Desktop/808x/assignment/week5/week5/build/vendor/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jing/Desktop/808x/assignment/week5/Git/week5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jing/Desktop/808x/assignment/week5/Git/week5 /home/jing/Desktop/808x/assignment/week5/Git/week5/vendor/googletest/googletest /home/jing/Desktop/808x/assignment/week5/Git/week5/build /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest /home/jing/Desktop/808x/assignment/week5/Git/week5/build/vendor/googletest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vendor/googletest/googletest/CMakeFiles/gtest.dir/depend
 

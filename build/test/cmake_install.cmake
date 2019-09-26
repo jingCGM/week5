@@ -1,4 +1,4 @@
-# Install script for directory: /home/jing/Desktop/808x/assignment/week5/week5/test
+# Install script for directory: /home/jing/Desktop/808x/assignment/week5/Git/week5/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
