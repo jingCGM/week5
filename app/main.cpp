@@ -5,7 +5,7 @@
  *  @date    09/26/2019
  *  @version 1.0
  *
- *  @brief This file is a simple PID controller
+ *  @brief This file is main file of using a simple PID controller
  *
  */
 
@@ -28,7 +28,7 @@ int main() {
 	std::cout<<"pid coefficient values are: "<<controller.getGain()<<"/"<<controller.getIntegral()<<"/"<<controller.getDerivative()<<std::endl;
 
 	double groundTruth = 1;
-	double thresholdPID = 0.01;
+	//double thresholdPID = 0.01;
 	double errorPID = 0;
 
 	errorPID = controller.getError(groundTruth);

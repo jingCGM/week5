@@ -5,7 +5,7 @@
  *  @date    09/26/2019
  *  @version 1.0
  *
- *  @brief This file is a simple PID controller
+ *  @brief This file is a header file to define a simple PID controller
  *
  */
 

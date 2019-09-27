@@ -9,33 +9,35 @@
  *
  */
 
-#include <iostream>
 #include <vector>
 #include <gtest/gtest.h>
 #include "pidController.h"
 
-/**
- * @brief    main function
- * @param    argc int
- * @param    argv char array
- * @return   0
- */
-int main() {
+
+
+TEST(dummy, one_step_test) {
 	std::vector<double> parametersPID = {0.01,4,0, 0.0001,0, -100,100};
 	pidController controller(parametersPID);
 
-	std::cout<<"pid coefficient values are: "<<controller.getGain()<<"/"<<controller.getIntegral()<<"/"<<controller.getDerivative()<<std::endl;
+	double groundTruth = 1;
+	double errorPID = 0;
+
+	errorPID = controller.getError(groundTruth);
+
+	EXPECT_EQ(errorPID, groundTruth);
+}
+
+TEST(dummy2, threshold_test) {
+	std::vector<double> parametersPID = {0.01,4,0, 0.0001,0, -100,100};
+	pidController controller(parametersPID);
 
 	double groundTruth = 1;
 	double thresholdPID = 0.01;
 	double errorPID = 0;
 
-	errorPID = controller.getError(groundTruth);
-	std::cout<<"error: "<<errorPID<<std::endl;
-	
-	TEST(dummy, should_pass) {
-		EXPECT_EQ(errorPID, groundTruth);
-	}
+	do {
+		errorPID = controller.getError(groundTruth);
+	} while(std::abs(errorPID-groundTruth)>thresholdPID);
 
-	return 0;
+	EXPECT_EQ(errorPID, groundTruth);
 }
