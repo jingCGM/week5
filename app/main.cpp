@@ -22,21 +22,23 @@
  * @return   0
  */
 int main() {
-	std::vector<double> parametersPID = {0.01,4,0, 0.0001,0, -100,100};
+	std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
-	std::cout<<"pid coefficient values are: "<<controller.getGain()<<"/"<<controller.getIntegral()<<"/"<<controller.getDerivative()<<std::endl;
+	std::cout << "pid coefficient values are: ";
+	std::cout << controller.getGain() << "/" << controller.getIntegral() << "/";
+	std::cout << controller.getDerivative() << std::endl;
 
 	double groundTruth = 1;
-	//double thresholdPID = 0.01;
+	// double thresholdPID = 0.01;
 	double errorPID = 0;
 
 	errorPID = controller.getError(groundTruth);
-	std::cout<<"error: "<<errorPID<<std::endl;
+	std::cout << "error: "<< errorPID << std::endl;
 	// do {
 	// 	errorPID = controller.getError(groundTruth);
-	// 	std::cout<<"error: "<<errorPID<<std::endl;
-	// } while(std::abs(errorPID-groundTruth)>thresholdPID);
+	// 	std::cout << "error: " << errorPID << std::endl;
+	// } while (std::abs(errorPID-groundTruth) > thresholdPID);
 
 	return 0;
 }

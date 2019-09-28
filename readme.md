@@ -2,9 +2,12 @@
 [![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
 [![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
 ---
+
 ## Roles for Part 1
-Driver: Jing Liang
-Navigator: Umang Rastogi
+
+- Driver: Jing Liang
+- Navigator: Umang Rastogi
+
 ## Overview
 
 Simple starter C++ project with:
@@ -13,7 +16,7 @@ Simple starter C++ project with:
 - googletest
 
 ## Standard install via command-line
-```
+```sh
 cd <path to repository>
 mkdir build
 cd build
@@ -24,7 +27,7 @@ Run program: ./app/shell-app
 ```
 
 ## Building for code coverage (for assignments beginning in Week 4)
-```
+```sh
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
 make
@@ -37,19 +40,19 @@ This generates a index.html page in the build/coverage sub-directory that can be
 ## Installation
 
 In your Eclipse workspace directory (or create a new one), checkout the repo (and submodules)
-```
+```sh
 mkdir -p ~/workspace
 cd ~/workspace
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/jingCGM/week5
 ```
 
-In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of cpp-boilerplate
+In your work directory, use cmake to create an Eclipse project for an [out-of-source build] of week5
 
-```
+```sh
 cd ~/workspace
 mkdir -p boilerplate-eclipse
 cd boilerplate-eclipse
-cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
+cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../week5/
 ```
 
 ## Import
@@ -121,7 +124,3 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
     Project Explorer and choose Source -> Format
 
 [reference-id-for-eclipse-cpp-google-style]: https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-cpp-google-style.xml
-
-- Git
-
-    It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.

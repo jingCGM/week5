@@ -16,7 +16,7 @@
 
 
 TEST(dummy, one_step_test) {
-	std::vector<double> parametersPID = {0.01,4,0, 0.0001,0, -100,100};
+	std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
 	double groundTruth = 1;
@@ -28,7 +28,7 @@ TEST(dummy, one_step_test) {
 }
 
 TEST(dummy2, threshold_test) {
-	std::vector<double> parametersPID = {0.01,4,0, 0.0001,0, -100,100};
+	std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
 	double groundTruth = 1;
@@ -37,7 +37,7 @@ TEST(dummy2, threshold_test) {
 
 	do {
 		errorPID = controller.getError(groundTruth);
-	} while(std::abs(errorPID-groundTruth)>thresholdPID);
+	} while (std::abs(errorPID-groundTruth) > thresholdPID);
 
 	EXPECT_EQ(errorPID, groundTruth);
 }
