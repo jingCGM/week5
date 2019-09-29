@@ -1,11 +1,11 @@
 /**
- *  @file    pidController.h
- *  @author  Jing Liang
- *  @copyright 3-clause BSD
- *  @date    09/26/2019
- *  @version 1.0
+ *  @file       pidController.h
+ *  @author     Jing Liang
+ *  @copyright  3-clause BSD
+ *  @date       09/26/2019
+ *  @version    1.0
  *
- *  @brief This file is a header file to define a simple PID controller
+ *  @brief      This file is a header file to define a simple PID controller
  *
  */
 
@@ -63,18 +63,18 @@ public:
 	double getDerivative();
 
 	/**
-	 * @brief    get error of one step
-	 * @param    inputValue const double&, it is the input signal for one step
+	 * @brief    Get error of one step by taking the difference of the system velocity output and setpoint
+	 * @param    setPoint double&, systemOutput double&
 	 * @return   pidError double
 	 */
-	double getError(const double& inputValue);
+	double getError(double& setPoint, double& systemOutput);
 
 	/**
-	 * @brief    use getError function to generate error each step and tune the controller to stable position
-	 * @param    inputValue const double&, it is the input signal for each step
+	 * @brief    Use getError output to generate error each step and compute controller output
+	 * @param    currentError double&
 	 * @return   output double
 	 */
-	double tunningPID(const double& inputValue);
+	double computePIDOutput(double& currentError);
 };
 
 #endif

@@ -1,11 +1,11 @@
 /**
- *  @file    pidController.cpp
- *  @author  Kevin Dong
- *  @copyright 3-clause BSD
- *  @date    09/28/2019
- *  @version 1.0
+ *  @file       pidController.cpp
+ *  @author     Kevin Dong
+ *  @copyright  3-clause BSD
+ *  @date       09/28/2019
+ *  @version    1.0
  *
- *  @brief Definitions for pidController.h
+ *  @brief      Definitions for pidController.h
  *
  */
 
@@ -34,20 +34,18 @@ double pidController::getIntegral(){return pidIntegral;}
 double pidController::getDerivative(){return pidDerivative;}
 
 
-double pidController::getError(const double& inputValue) 
+double pidController::getError(double& setPoint, double& systemOutput) 
 {
-	pidError = inputValue - previousError;
-	totalIntegration = std::max(minIntegeral, std::min(pidError*timeStep+totalIntegration, maxIntegeral));
-
-	pidError = pidGain*pidError + pidIntegral*totalIntegration + pidDerivative*(pidError - previousError)/timeStep;
-	previousError = pidError;
-	return pidError;
+	double pidError = setPoint - systemOutput;
+    return pidError;
 }
 
 
-double pidController::tunningPID(const double& inputValue)
+double pidController::computePIDOutput(double& currentError)
 {
-    double error = getError(inputValue);
+    totalIntegration = std::max(minIntegeral, std::min(currentError*timeStep+totalIntegration, maxIntegeral));
 
-    return error;
+	double output = pidGain*currentError + pidIntegral*totalIntegration + pidDerivative*(pidError - previousError)/timeStep;
+	previousError = currentError;
+	return output;
 }
