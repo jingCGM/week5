@@ -9,9 +9,10 @@
  *
  */
 
-#ifndef PID_CONTROLLER_H
-#define PID_CONTROLLER_H
+#ifndef INCLUDE_PIDCONTROLLER_H_
+#define INCLUDE_PIDCONTROLLER_H_
 
+#include <vector>
 
 /**
  * @brief    pidController
@@ -23,17 +24,16 @@ private:
 	double pidDerivative = 0;
 
 	double timeStep = 0;
-	double inputValue = 0;
+	// double inputValue = 0;
 
 	double maxIntegeral = 0;
 	double minIntegeral = 0;
 
-	double pidError = 0;
-	double previousError = 0;
+public:
 
+    double previousError = 0;
 	double totalIntegration = 0;
 
-public:
 	/**
 	 * @brief    pidController's constructor
 	 * @param    parameters const std::vector<double> , with {gain coefficient, integral coefficient, derivative coefficient, timestep, initial integral value}
@@ -77,4 +77,4 @@ public:
 	double computePIDOutput(double& currentError);
 };
 
-#endif
+#endif      // INCLUDE_PIDCONTROLLER_H_

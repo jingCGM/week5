@@ -9,15 +9,13 @@
  *
  */
 
-#include <vector>
 #include <gtest/gtest.h>
-#include "pidController.h"
+#include <vector>
+#include <pidController.h>
 
 
-
-TEST(PIDTest, getError_test) 
-{
-	std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
+TEST(PIDTest, getError_test)  {
+    std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
 	double groundTruth = 1;
@@ -29,8 +27,7 @@ TEST(PIDTest, getError_test)
 	EXPECT_EQ(error, 0.5);
 }
 
-TEST(PIDTest, computePIDOutput_test) 
-{
+TEST(PIDTest, computePIDOutput_test)  {
 	std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
@@ -43,5 +40,5 @@ TEST(PIDTest, computePIDOutput_test)
 
 	EXPECT_EQ(pidOutput, 10001.0001);
     EXPECT_EQ(controller.previousError, 1);
-    EXPECT_EQ(controller.totalIntegration, 1);
+    EXPECT_EQ(controller.totalIntegration, 0.0001);
 }
