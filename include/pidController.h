@@ -13,8 +13,6 @@
 #define PID_CONTROLLER_H
 
 
-
-
 /**
  * @brief    pidController
  */
@@ -48,21 +46,21 @@ public:
 	 * @param    none
 	 * @return   pidGain double
 	 */
-	double getGain(){return pidGain;}
+	double getGain();
 
 	/**
 	 * @brief    get coefficent of integral
 	 * @param    none
 	 * @return   pidIntegral double
 	 */
-	double getIntegral(){return pidIntegral;}
+	double getIntegral();
 
 	/**
 	 * @brief    get coefficent of derivative
 	 * @param    none
 	 * @return   pidDerivative double
 	 */
-	double getDerivative(){return pidDerivative;}
+	double getDerivative();
 
 	/**
 	 * @brief    get error of one step
@@ -78,24 +76,5 @@ public:
 	 */
 	double tunningPID(const double& inputValue);
 };
-
-pidController::pidController(const std::vector<double>& parameters) {
-	pidGain = *parameters.begin();
-	pidIntegral = * (parameters.begin()+1); //std::next(parameters.begin(),1);
-	pidDerivative = * (parameters.begin()+2);
-	timeStep = * (parameters.begin()+3);
-	totalIntegration = * (parameters.begin()+4);
-	minIntegeral = * (parameters.begin()+5);
-	maxIntegeral = * (parameters.begin()+6);
-}
-
-double pidController::getError(const double& inputValue) {
-	pidError = inputValue - previousError;
-	totalIntegration =std::max(minIntegeral, std::min(pidError*timeStep+totalIntegration, maxIntegeral));
-
-	pidError = pidGain*pidError + pidIntegral*totalIntegration + pidDerivative*(pidError - previousError)/timeStep;
-	previousError = pidError;
-	return pidError;
-}
 
 #endif

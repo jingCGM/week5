@@ -8,6 +8,11 @@
 - Driver: Jing Liang
 - Navigator: Umang Rastogi
 
+## Roles for Part 2
+
+- Driver: Hao Da (Kevin) Dong
+- Navigator: Lydia Al-Zogbi
+
 ## Overview
 
 Simple starter C++ project with:
