@@ -24,13 +24,13 @@ pidController::pidController(const std::vector<double>& parameters) {
 }
 
 
-double pidController::getGain() {return pidGain;}
+// double pidController::getGain() {return pidGain;}
 
 
-double pidController::getIntegral() {return pidIntegral;}
+// double pidController::getIntegral() {return pidIntegral;}
 
 
-double pidController::getDerivative() {return pidDerivative;}
+// double pidController::getDerivative() {return pidDerivative;}
 
 
 double pidController::getError(double& setPoint, double& systemOutput) {

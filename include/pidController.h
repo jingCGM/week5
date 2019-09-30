@@ -46,21 +46,21 @@ public:
 	 * @param    none
 	 * @return   pidGain double
 	 */
-	double getGain();
+	// double getGain();
 
 	/**
 	 * @brief    get coefficent of integral
 	 * @param    none
 	 * @return   pidIntegral double
 	 */
-	double getIntegral();
+	// double getIntegral();
 
 	/**
 	 * @brief    get coefficent of derivative
 	 * @param    none
 	 * @return   pidDerivative double
 	 */
-	double getDerivative();
+	// double getDerivative();
 
 	/**
 	 * @brief    Get error of one step by taking the difference of the system velocity output and setpoint
