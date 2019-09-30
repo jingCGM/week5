@@ -8,3 +8,5 @@ script:
   - cmake .. && make
   - ./app/shell-app
   - ./test/cpp-test
+
+after_success: "sbt coveralls"
