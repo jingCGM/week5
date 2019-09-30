@@ -1,12 +1,27 @@
 # Week 5
-[![Build Status](https://travis-ci.org/JjingCGM/week5.svg?branch=master)](https://travis-ci.org/jingCGM/week5)
-[![Coverage Status](https://coveralls.io/repos/github/jingCGM/week5/badge.svg?branch=master)](https://coveralls.io/github/jingCGM/week5?branch=master)
+[![Build Status](https://travis-ci.org/jingCGM/week5.svg?branch=master)](https://travis-ci.org/jingCGM/week5)
+[![Coverage Status](https://coveralls.io/repos/github/jingCGM/week5/badge.svg)](https://coveralls.io/github/jingCGM/week5)
 ---
 
 ## Roles for Part 1
 
 - Driver: Jing Liang
 - Navigator: Umang Rastogi
+
+## Roles for Part 2
+
+- Driver: Hao Da (Kevin) Dong
+- Navigator: Lydia Al-Zogbi
+
+## Notes
+UML diagrams should be given with a repository before it is forked by the Part 2 pair
+CPPLint gives errors that are far too trivial to code readability
+Overall the process was a useful experience
+
+## Things to do
+Create system plant model
+Create visulaizer for controller and plant output
+Tune PID gains
 
 ## Overview
 
