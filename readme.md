@@ -1,6 +1,6 @@
 # Week 5
-[![Build Status](https://travis-ci.org/JjingCGM/week5.svg?branch=master)](https://travis-ci.org/jingCGM/week5)
-[![Coverage Status](https://coveralls.io/repos/github/jingCGM/week5/badge.svg?branch=master)](https://coveralls.io/github/jingCGM/week5?branch=master)
+[![Build Status](https://travis-ci.org/jingCGM/week5.svg?branch=master)](https://travis-ci.org/jingCGM/week5)
+[![Coverage Status](https://coveralls.io/repos/github/jingCGM/week5/badge.svg)](https://coveralls.io/github/jingCGM/week5)
 ---
 
 ## Roles for Part 1
