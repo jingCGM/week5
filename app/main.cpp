@@ -24,8 +24,8 @@ int main() {
     std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
     pidController controller(parametersPID);
     std::cout << "pid coefficient values are: ";
-    // std::cout << controller.getGain() << "/" << controller.getIntegral() << "/";
-    // std::cout << controller.getDerivative() << std::endl;
+    std::cout << controller.getGain() << "/" << controller.getIntegral() << "/";
+    std::cout << controller.getDerivative() << std::endl;
     double groundTruth = 1;
     double systemOutput = 0.5;
     double error = 0;
