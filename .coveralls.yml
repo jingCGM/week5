@@ -1,2 +1,6 @@
 service_name: travis-ci
+repo_token: ...
+
+COVERALLS_REPO_TOKEN=asdfasdf bundle exec rspec spec
+CI_PULL_REQUEST=$ghprbPullId
 
