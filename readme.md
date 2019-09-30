@@ -1,6 +1,6 @@
-# C++ Boilerplate
-[![Build Status](https://travis-ci.org/dpiet/cpp-boilerplate.svg?branch=master)](https://travis-ci.org/dpiet/cpp-boilerplate)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+# Week 5
+[![Build Status](https://travis-ci.org/JjingCGM/week5.svg?branch=master)](https://travis-ci.org/jingCGM/week5)
+[![Coverage Status](https://coveralls.io/repos/github/jingCGM/week5/badge.svg?branch=master)](https://coveralls.io/github/jingCGM/week5?branch=master)
 ---
 
 ## Roles for Part 1
@@ -65,15 +65,15 @@ In your work directory, use cmake to create an Eclipse project for an [out-of-so
 
 ```sh
 cd ~/workspace
-mkdir -p boilerplate-eclipse
-cd boilerplate-eclipse
+mkdir -p week5-eclipse
+cd week5-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../week5/
 ```
 
 ## Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
-Select "boilerplate-eclipse" directory created previously as root directory -> Finish
+Select "week5-eclipse" directory created previously as root directory -> Finish
 
 # Edit
 
@@ -82,12 +82,12 @@ Source files may be edited under the "[Source Directory]" label in the Project E
 
 ## Build
 
-To build the project, in Eclipse, unfold boilerplate-eclipse project in Project Explorer,
+To build the project, in Eclipse, unfold week5-eclipse project in Project Explorer,
 unfold Build Targets, double click on "all" to build all projects.
 
 ## Run
 
-1. In Eclipse, right click on the boilerplate-eclipse in Project Explorer,
+1. In Eclipse, right click on the week5-eclipse in Project Explorer,
 select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
@@ -95,11 +95,10 @@ select Run As -> Local C/C++ Application
 
 ## Debug
 
-
 1. Set breakpoint in source file (i.e. double click in the left margin on the line you want 
 the program to break).
 
-2. In Eclipse, right click on the boilerplate-eclipse in Project Explorer, select Debug As -> 
+2. In Eclipse, right click on the week-eclipse in Project Explorer, select Debug As -> 
 Local C/C++ Application, choose the binaries to run (e.g. shell-app).
 
 3. If prompt to "Confirm Perspective Switch", select yes.
@@ -112,7 +111,7 @@ Local C/C++ Application, choose the binaries to run (e.g. shell-app).
 debugger window.
 
 7. Press Terminate icon to terminate debugging and press C/C++ icon to switch back to C/C++ 
-perspetive view (or Windows->Perspective->Open Perspective->C/C++).
+perspective view (or Windows->Perspective->Open Perspective->C/C++).
 
 
 ## Plugins
@@ -128,7 +127,7 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
     and choose cppcheck -> Run cppcheck.
 
 
-- Google C++ Sytle
+- Google C++ Style
 
     To include and use Google C++ Style formatter in Eclipse
 
