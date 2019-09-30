@@ -13,7 +13,12 @@
 #include <vector>
 #include <pidController.h>
 
-
+/**
+ * @brief    the function tests if the integerator buffer behaves right
+ * @param    PIDTest is test name
+ * @param    getError_test shows what function this test does
+ * @return   none
+ */
 TEST(PIDTest, getError_test)  {
     std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
@@ -27,6 +32,13 @@ TEST(PIDTest, getError_test)  {
 	EXPECT_EQ(error, 0.5);
 }
 
+
+/**
+ * @brief    the function tests if the integerator buffer behaves right
+ * @param    PIDTest is test name
+ * @param    computePIDOutput_test shows what function this test does
+ * @return   none
+ */
 TEST(PIDTest, computePIDOutput_test)  {
 	std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
