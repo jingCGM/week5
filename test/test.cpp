@@ -1,43 +1,44 @@
 /**
- *  @file    test.cpp
- *  @author  Jing Liang
- *  @copyright 3-clause BSD
- *  @date    09/26/2019
- *  @version 1.0
+ *  @file       test.cpp
+ *  @author     Jing Liang
+ *  @copyright  3-clause BSD
+ *  @date       09/26/2019
+ *  @version    1.0
  *
- *  @brief This file is to test PID controller
+ *  @brief      This file is to test PID controller
  *
  */
 
-#include <vector>
 #include <gtest/gtest.h>
-#include "pidController.h"
+#include <vector>
+#include <pidController.h>
 
 
-
-TEST(dummy, one_step_test) {
-	std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
+TEST(PIDTest, getError_test)  {
+    std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
 	double groundTruth = 1;
-	double errorPID = 0;
+    double systemOutput = 0.5;
+	double error = 0;
 
-	errorPID = controller.getError(groundTruth);
+	error = controller.getError(groundTruth, systemOutput);
 
-	EXPECT_EQ(errorPID, groundTruth);
+	EXPECT_EQ(error, 0.5);
 }
 
-TEST(dummy2, threshold_test) {
-	std::vector<double> parametersPID = {0.01, 4, 0, 0.0001, 0, -100, 100};
+TEST(PIDTest, computePIDOutput_test)  {
+	std::vector<double> parametersPID = {1, 1, 1, 0.0001, 0, -100, 100};
 	pidController controller(parametersPID);
 
 	double groundTruth = 1;
-	double thresholdPID = 0.01;
-	double errorPID = 0;
+    double systemOutput = 0;
+	double pidOutput = 0;
 
-	do {
-		errorPID = controller.getError(groundTruth);
-	} while (std::abs(errorPID-groundTruth) > thresholdPID);
+    double error = controller.getError(groundTruth, systemOutput);
+	pidOutput = controller.computePIDOutput(error);
 
-	EXPECT_EQ(errorPID, groundTruth);
+	EXPECT_EQ(pidOutput, 10001.0001);
+    EXPECT_EQ(controller.previousError, 1);
+    EXPECT_EQ(controller.totalIntegration, 0.0001);
 }
