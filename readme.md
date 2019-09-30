@@ -14,14 +14,14 @@
 - Navigator: Lydia Al-Zogbi
 
 ## Notes
-UML diagrams should be given with a repository before it is forked by the Part 2 pair
-CPPLint gives errors that are far too trivial to code readability
-Overall the process was a useful experience
+- UML diagrams should be given with a repository before it is forked by the Part 2 pair
+- CPPLint gives errors that are far too trivial to code readability
+- Overall the process was a useful experience
 
 ## Things to do
-Create system plant model
-Create visulaizer for controller and plant output
-Tune PID gains
+- Create system plant model
+- Create visualizer for controller and plant output
+- Tune PID gains
 
 ## Overview
 
